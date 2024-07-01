@@ -1,9 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.menufy">
+    package="com.example.hello_world">
    <application
-        android:label="menufy"
+        android:label="hello_world"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+         <meta-data
+            android:name="com.mapbox.token"
+            android:value="pk.eyJ1IjoiYWtoaWxsZXZha3VtYXIiLCJhIjoiY2x4MDcwYzZ4MGl2aTJqcmFxbXZzc3lndiJ9.9sxfvrADlA25b1CHX2VuDA"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -31,4 +34,6 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 </manifest>
